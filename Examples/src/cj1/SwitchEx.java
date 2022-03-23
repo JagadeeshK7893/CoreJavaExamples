@@ -6,21 +6,36 @@ public class SwitchEx {
 
 	public static void main(String[] args) {
 		int n=5;
+		String month="";
 		switch(n)
 		{
-		case 1:System.out.println("1");
+		case 1:month="january";
 		break;
-		case 2:System.out.println("2");
+		case 2:month="february";
 		break;
-		case 3:System.out.println("3");
+		case 3:month="march";
 		break;
-		case 4:System.out.println("4");
+		case 4:month="april";
 		break;
-		case 5:System.out.println("5");
+		case 5:month="may";
 		break;
-		default:System.out.println("not 1 or 2 or 3 or 4 or 5");
+		case 6:month="june";
+		break;
+		case 7:month="july";
+		break;
+		case 8:month="auguest";
+		break;
+		case 9:month="september";
+		break;
+		case 10:month="october";
+		break;
+		case 11:month="november";
+		break;
+		case 12:month="december";
+		break;
+		default:System.out.println("invalid month");
 		}
-		
+		System.out.println(month);
 	}
 
 }
