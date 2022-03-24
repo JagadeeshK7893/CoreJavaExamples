@@ -1,0 +1,32 @@
+
+public class ConstructorEx {
+	int exp;
+	String name;
+	int age;
+	public ConstructorEx(int exp,String name,int age)
+	{
+		this.exp=exp;
+		this.name=name;
+		this.age=age;
+		
+	}
+	public ConstructorEx(ConstructorEx emp)
+	{
+		name=emp.name;
+		exp=emp.exp;
+		age=emp.age;
+	}
+	void employeeDetails()
+	{
+		System.out.println(exp+"  "+name+"  "+age);
+	}
+
+	public static void main(String[] args) {
+		ConstructorEx emp1=new ConstructorEx(3,"Prasanth",26);
+		ConstructorEx emp2=new ConstructorEx(emp1);
+		emp1.employeeDetails(); 
+		emp2.employeeDetails();
+
+	}
+
+}

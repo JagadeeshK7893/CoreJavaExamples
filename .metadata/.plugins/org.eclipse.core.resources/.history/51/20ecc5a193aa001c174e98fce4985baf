@@ -1,0 +1,34 @@
+package cj1;
+import java.util.Scanner;
+
+public class WhileLoop {
+	int n;
+
+	public void Palindrome()
+	{
+		System.out.println("enter number to check the numer is palindrome...or not...");
+		Scanner value=new Scanner(System.in);
+		int num=value.nextInt();
+		int sum=0;
+		int rem;
+		int temp=num;
+		while(temp>0) {
+			rem=temp%10;
+			sum=sum*10+rem;
+			temp=temp/10;
+		}
+		if(num==sum)
+		{
+			System.out.println(num+".. is a palindrome number");
+		}
+	}
+
+	public static void main(String[] args) {
+		System.out.println("enter number to check the numer is palindrome...or not...");
+		Scanner value=new Scanner(System.in);
+		int num=value.nextInt();
+		WhileLoop obj=new WhileLoop(); 
+		obj.Palindrome();
+	}
+
+}

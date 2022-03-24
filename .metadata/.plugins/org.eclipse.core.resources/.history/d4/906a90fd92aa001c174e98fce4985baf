@@ -1,0 +1,30 @@
+package cj1;
+
+public class WhileLoop {
+	int n;
+	public WhileLoop(int i)
+	{
+		this.n=n;
+	}
+	public void Palindrome()
+	{
+		int sum=0;
+		int rem;
+		int temp=n;
+		while(temp>0) {
+			rem=temp%10;
+			sum=sum*10+rem;
+			temp=temp/10;
+		}
+		if(n==sum)
+		{
+			System.out.println(n+".. is a palindrome number");
+		}
+	}
+
+	public static void main(String[] args) {
+     
+		
+	}
+
+}

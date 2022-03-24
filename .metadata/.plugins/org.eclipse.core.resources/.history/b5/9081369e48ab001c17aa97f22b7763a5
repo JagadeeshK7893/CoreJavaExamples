@@ -1,0 +1,37 @@
+class Stu
+	{
+		int rollno;
+		String name;
+		int age;
+		Address adr;
+		public Stu(int rollno,String name,int age,Address adr)
+		{
+			this.rollno=rollno;
+			this.name=name;
+			this.age=age;
+			this.adr=adr;
+		}
+		public void details()
+		{ 
+			adr=new Address();
+			System.out.println(rollno+" "+ name +" "+ age);
+		}
+	}
+class Address
+	{
+		String village,distict,state;
+		public Address(String village,String distict,String state)
+		{
+			this.village=village;
+			this.distict=distict;
+			this.state=state;
+		}
+	}
+public class AggregationEx {
+	public static void main(String[] args) {
+		Stu obj=new Stu();
+		obj.details();
+		
+	}
+
+}

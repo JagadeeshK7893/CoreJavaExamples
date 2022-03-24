@@ -31,7 +31,7 @@ public class ForLoopAndBreak {
 		}
 	}
 	public static void main(String[] args) {
-     ForLoop.primeNumbers();
+     ForLoopAndBreak.primeNumbers();
 	}
 
 }
